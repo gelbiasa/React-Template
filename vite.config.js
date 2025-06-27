@@ -9,7 +9,18 @@ export default defineConfig({
             refresh: true,
         }),
         react({
-            jsxRuntime: 'automatic'
+            jsxRuntime: 'automatic',
+            fastRefresh: true,
         }),
     ],
+    resolve: {
+        alias: {
+            '@': '/resources/js',
+        },
+    },
+    server: {
+        hmr: {
+            host: 'localhost',
+        },
+    },
 });
