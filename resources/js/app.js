@@ -5,16 +5,16 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
     plugins: [
         laravel({
-            input: ['resources/css/app.css', 'resources/js/app.js'],
+            input: ['resources/css/app.css', 'resources/js/app.jsx'], // Ubah ke .jsx
             refresh: true,
         }),
         react({
-            include: "**/*.jsx",
+            include: "**/*.{js,jsx}", // Dukung keduanya
         }),
     ],
     esbuild: {
         loader: "jsx",
-        include: /resources\/js\/.*\.jsx?$/,
+        include: /resources\/js\/.*\.(js|jsx)$/,
         exclude: [],
     },
 });
