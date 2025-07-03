@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dashboard - React Template</title>
+    <title>Dashboard - React Template Public Testing</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
